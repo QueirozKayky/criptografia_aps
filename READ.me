@@ -1,0 +1,80 @@
+🧩 Sistema de Criptografia RSA (MFA / RSA)
+
+Este projeto é um programa simples em Python que demonstra o funcionamento básico do algoritmo RSA, permitindo:
+
+Gerar chaves públicas e privadas
+
+Criptografar mensagens
+
+Descriptografar mensagens
+
+O menu principal guia o usuário pelas funções do sistema.
+
+▶️ Como usar
+
+Ao executar o programa, você verá o menu:
+
+*****************************
+*         MFA / RSA         *
+*****************************
+| 1 - Definir chaves RSA     |
+| 2 - Criptografar mensagem  |
+| 3 - Descriptografar        |
+| 4 - Sair                   |
+*****************************
+
+1️⃣ Definir chaves RSA
+
+Insira dois números primos P e Q
+
+O programa calcula:
+
+N
+
+φ(n)
+
+Lista valores possíveis para E
+
+Escolha um E válido
+
+O programa gera automaticamente o valor de D
+
+⚠️ Guarde N, E e D, pois serão usados depois.
+
+2️⃣ Criptografar mensagem
+
+Informe N e E
+
+Digite a mensagem desejada
+
+O programa converte cada caractere para número e aplica a fórmula:
+
+C = (M^E) mod N
+
+
+A saída será uma sequência de números (a mensagem criptografada).
+
+3️⃣ Descriptografar mensagem
+
+Informe P, Q e D
+
+Cole a mensagem criptografada (números separados por espaço)
+
+O programa reverte a criptografia usando:
+
+M = (C^D) mod N
+
+
+Resultado: a mensagem original.
+
+📂 Estrutura do projeto
+criptografia/
+│── criptografia.py  # código fonte do sistema RSA
+
+📝 Observações
+
+Certifique-se de inserir somente números na descriptografia (não cole texto).
+
+P, Q e E devem seguir as regras matemáticas do RSA.
+
+O código é uma implementação educacional, não destinada a uso real de segurança.
